@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477B47492B68A205007E3B43 /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B47482B68A205007E3B43 /* EffectView.swift */; };
+		477B474B2B68DDD0007E3B43 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B474A2B68DDD0007E3B43 /* UIImageExtension.swift */; };
 		47EA8E5C2B6530FC00FE45E0 /* MyCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA8E5B2B6530FC00FE45E0 /* MyCameraApp.swift */; };
 		47EA8E5E2B6530FC00FE45E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA8E5D2B6530FC00FE45E0 /* ContentView.swift */; };
 		47EA8E602B6530FE00FE45E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EA8E5F2B6530FE00FE45E0 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		477B47482B68A205007E3B43 /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
+		477B474A2B68DDD0007E3B43 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		47EA8E582B6530FC00FE45E0 /* MyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EA8E5B2B6530FC00FE45E0 /* MyCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCameraApp.swift; sourceTree = "<group>"; };
 		47EA8E5D2B6530FC00FE45E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +59,11 @@
 			children = (
 				47EA8E5B2B6530FC00FE45E0 /* MyCameraApp.swift */,
 				47EA8E5D2B6530FC00FE45E0 /* ContentView.swift */,
+				477B474A2B68DDD0007E3B43 /* UIImageExtension.swift */,
 				47EA8E692B65EF1200FE45E0 /* ImagePickerView.swift */,
 				47EA8E5F2B6530FE00FE45E0 /* Assets.xcassets */,
 				47EA8E612B6530FE00FE45E0 /* Preview Content */,
+				477B47482B68A205007E3B43 /* EffectView.swift */,
 			);
 			path = MyCamera;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 				47EA8E5E2B6530FC00FE45E0 /* ContentView.swift in Sources */,
 				47EA8E6A2B65EF1200FE45E0 /* ImagePickerView.swift in Sources */,
 				47EA8E5C2B6530FC00FE45E0 /* MyCameraApp.swift in Sources */,
+				477B474B2B68DDD0007E3B43 /* UIImageExtension.swift in Sources */,
+				477B47492B68A205007E3B43 /* EffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +288,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "写真を撮影してるためにカメラ使用します";
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影します";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "写真の共有します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,6 +320,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "写真を撮影してるためにカメラ使用します";
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影します";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "写真の共有します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

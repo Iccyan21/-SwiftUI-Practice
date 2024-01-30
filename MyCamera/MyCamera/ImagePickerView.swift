@@ -24,12 +24,13 @@ struct ImagePickerView: UIViewControllerRepresentable {
         }
         // 撮影時に呼ばれるdelegateメゾット,必ず必要
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]){
-            // 撮影した写真をcaptureImageに保存
-            if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-                parent.captuerImage = originalImage
+            // UIImagePickerControllerを閉じる、isShowSheetがfalseになる
+            picker.dismiss(animated: true){
+                if let originalImage =
+                    info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                    self.parent.captuerImage = originalImage
+                }
             }
-            // sheetを閉じる
-            parent.isShowSheet.toggle()
         }
         // キャンセルボタンが選択された時に呼ばれるメゾット
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
